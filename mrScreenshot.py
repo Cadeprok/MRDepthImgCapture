@@ -22,7 +22,7 @@ def take_screenshot(file_path):
 if __name__ == "__main__":
     # Path will need to be changed depending on what system you are using (Desktop @ lab, personal, etc)
     # Set the file path where you want to save the screenshots
-    screenshot_path = 'path_to_save_screenshot/'
+    screenshot_path = r"C:\Users\cader\OneDrive\Desktop\MRScreenShotTesting"
 
     # Number of screenshots to capture
     num_screenshots = 5
