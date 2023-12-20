@@ -1,3 +1,6 @@
+# This is to take an image of the entire screen. 
+
+
 import time
 import pyautogui
 
@@ -17,6 +20,7 @@ def take_screenshot(file_path):
     print(f'Screenshot saved to: {file_path}{file_name}')
 
 if __name__ == "__main__":
+    # Path will need to be changed depending on what system you are using (Desktop @ lab, personal, etc)
     # Set the file path where you want to save the screenshots
     screenshot_path = 'path_to_save_screenshot/'
 
