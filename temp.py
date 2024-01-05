@@ -1,8 +1,7 @@
-# pip install pygetwindow pyautogui
-
+# pip install pygetwindow
+'''
 import time
 import pygetwindow as gw
-import pyautogui
 
 def take_screenshot(window_title, file_path):
     # Wait for a moment to ensure the application is visible
@@ -12,15 +11,15 @@ def take_screenshot(window_title, file_path):
     app_window = gw.getWindowsWithTitle(window_title)
 
     if app_window:
-        # Get the window's position and size using pygetwindow
-        window_rect = app_window[0]._rect
+        # Activate the application window
+        app_window[0].activate()
 
-        # Capture the screen of the specified window using pyautogui
-        screenshot = pyautogui.screenshot(region=(window_rect.left, window_rect.top, window_rect.width, window_rect.height))
+        # Capture the screen of the active window
+        screenshot = gw.getWindowsWithTitle(window_title)[0].screenshot()
 
         # Add a timestamp to the file name
         timestamp = time.strftime('%Y%m%d%H%M%S')
-        file_name = f'{window_title}_screenshot_{timestamp}.png'
+        file_name = f'desktop_screenshot_{timestamp}.png'
 
         # Save the screenshot with the updated file name
         screenshot.save(file_path + file_name)
@@ -30,17 +29,11 @@ def take_screenshot(window_title, file_path):
 
 if __name__ == "__main__":
     # Set the file path where you want to save the screenshots
-    screenshot_path = r'C:\Users\cader\OneDrive\Desktop\MRScreenShotTesting\Test1'
+    screenshot_path = r'C:\Users\cader\OneDrive\Desktop\MRScreenShotTesting'
 
     # Specify the title of the application window
     # You can find the window title using gw.getAllTitles()
     window_title = 'Tigz - Twitch - Google Chrome'
 
     take_screenshot(window_title, screenshot_path)
-
-
-
-
-
-
-# screenshot_path = r'C:\Users\cader\OneDrive\Desktop\MRScreenShotTesting\Test1'
+'''
