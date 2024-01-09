@@ -1,12 +1,9 @@
 # pip install pygetwindow pyautogui
 
-
 # MAKE SURE YOU ARE ON CORRECT TAB
 # MAKE SURE YOU ARE ON CORRECT TAB
 # MAKE SURE YOU ARE ON CORRECT TAB
 # MAKE SURE YOU ARE ON CORRECT TAB
-
-
 
 import time
 import pygetwindow as gw
