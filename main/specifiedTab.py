@@ -53,7 +53,7 @@ def take_screenshot(window_title, file_path):
 
 def log_time_entry():
     # Get the current date and time
-    file_path = r'C:\Users\cader\OneDrive\Desktop\mrTimeStampTesting.txt'
+    file_path = r'C:\Users\cader\OneDrive\Desktop\Test11\t2.txt'
     current_time = datetime.datetime.now()
 
     # Format the date and time as a string
@@ -71,10 +71,10 @@ def log_time_entry():
 
 if __name__ == "__main__":
     # Set the file path where you want to save the screenshots
-    screenshot_path = r'C:\Users\cader\OneDrive\Desktop\MRScreenShotTesting\Test2'
+    screenshot_path = r'C:\Users\cader\OneDrive\Desktop\Test11\m1\Test1_'
 
     # Specify the title of the application window
     # You can find the window title using gw.getAllTitles()
-    window_title = 'DesmondPilak - Twitch - Google Chrome'
+    window_title = 'Depth'
 
     take_screenshot(window_title, screenshot_path)
